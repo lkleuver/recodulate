@@ -1,0 +1,32 @@
+{
+  "name": "@recodulate/react",
+  "version": "0.0.1",
+  "description": "Recodulate react",
+  "author": "Les Kleuver",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkleuver/recodulate.git",
+    "directory": "packages/react"
+  },
+  "scripts": {
+    "start": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
+    "build": "tsdx build --tsconfig tsconfig.build.json",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepublish": "npm run build"
+  },
+  "main": "dist/index.js",
+  "module": "dist/react.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "dependencies": {
+    "@recodulate/core": "^0.0.1",
+    "tslib": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
